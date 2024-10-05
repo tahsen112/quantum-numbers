@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Quantum convert</title>
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+     <div class="conteiner">
+          <header>محول اعداد الكم</header>
+
+          <hr class="1hr">
+
+          <section>
+               <p class="element">رمز العنصر: </p>
+               <div class="nameConteiner">
+                    <i style="display: none;" id="heart" class="fa-solid fa-heart"></i>
+                    <input type="text" placeholder="H" maxlength="2" class="elName" onkeyup="getValue(this.value)">
+               </div>
+
+               <p class="quantNum">العدد الذري: </p>
+               <input type="number" placeholder="1" max="118" class="qNum" onkeyup="getQuant(this.value)">
+
+               <div class="sen">
+                    <div class="quantDet">
+                         <p class="elementName">H:</p>
+                         <p class="elementSen">1s</p>
+                    </div>
+
+                    <div class="quantNums">
+                         <p class="n">n = 1</p>
+                         <p class="l">l = 0</p>
+                         <p class="ml">ml = 1/2</p>
+                         <p class="ms">ms = 0</p>
+                    </div>
+               </div>
+          </section>
+
+     </div>
+     <script src="main.js"></script>
+</body>
+
+</html>
